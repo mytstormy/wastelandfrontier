@@ -1,0 +1,154 @@
+/* CSS Document */
+
+/* so this is my first attempt... well, sorta... at making my own CSS file... */
+
+/*
+
+Ok, some notes about what i want this to look like... 
+Its named gold... i want a desert look to it.. light browns and golds.  Definitely not Dark.
+and we'll see how light i can make it without being too bright.
+
+*/
+
+/***********************************************/
+/* HTML tag styles                             */
+/***********************************************/
+body{
+	font-family: Arial,sans-serif;
+	color: #333333;
+	margin: 0px;
+	padding: 0px;
+	background: C0AA7B;
+}
+
+/***********************************************/
+/* Layout Divs                                 */
+/***********************************************/
+
+#map{
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	border: 1px solid #ccd2d2;
+	background-attachment: scroll;
+	background-image: url(../img/mapimg1.jpg);
+	background-repeat: no-repeat;
+}
+
+#banner{
+	position: absolute;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 151px;
+	border: 1px solid #ccd2d2;
+	width: 650px;
+	height: 150px;
+	background-attachment: scroll;
+	background-image: url(../img/bannerimg1.jpg);
+	background-repeat: no-repeat;
+}
+
+#nav{
+	position: absolute;
+	padding: 0px 0px 0px 0px;
+	margin: 151px 0px 0px 0px;
+	border: 1px solid #ccd2d2;
+	width: 150px;
+	background-attachment: scroll;
+	background-image: url(../img/navimgrep1.jpg);
+	background-repeat: repeat-y;
+}
+
+#content{
+	position: absolute;
+	padding: 0px 5px 0px 5px;
+	margin: 151px 0px 0px 151px;
+	border: 1px solid #ccd2d2;
+	width: 488px;
+	background: C0AA7B;
+	background-attachment: scroll;
+	background-image: url(../img/contentimgrep1.jpg);
+	background-repeat: repeat-y;
+	font-size:12px;
+}
+
+#statbar{
+	position: absolute;
+	padding: 0px 0px 0px 5px;
+	margin-top: 151px;
+	border: 1px solid #ccd2d2;
+	width: 145px;
+	background-attachment: scroll;
+	background-image: url(../img/navimgrep1.jpg);
+	background-repeat: repeat-y;
+	left: 651px;
+	top: 0px;
+	/*height: 352px;*/
+	font-size:11px;
+}
+
+/***********************************************/
+/*Footer needs adjusted                        */	
+/*     background:#ddd;
+    border-top:solid 1px #666;
+    bottom:0;
+    height:15px;
+    padding:5px;
+    position:fixed;
+    width:100%;
+    z-index:1000;
+	top:500px;
+	------------------
+	position: absolute;
+	padding: 0px 0px 0px 0px;
+	margin: 151px 0px 0px 151px;
+	border: 1px solid #ccd2d2;
+	width: 150px;
+	background-attachment: scroll;
+	background-image: url(../img/navimgrep1.jpg);
+	background-repeat: repeat-y;
+	left: 500px;
+	top: 0px;
+	height: 352px;
+	font-size:10px;
+	-------------------
+position: absolute;
+	margin-top: -180px; /* negative value of footer height */
+/***********************************************/
+#footer{
+
+	height: 45px;
+	font-size:10px;
+}
+
+
+
+/* testing show/hide css with javascript */
+#headerDiv, #contentDiv {
+float: left;
+width: 487px;
+}
+#titleText {
+float: left;
+font-size: 1.2em;
+font-weight: bold;
+margin: 5px 10px;
+}
+#headerDiv {
+background-color: #0037DB;
+color: #9EB6FF;
+}
+#contentDiv {
+background-color: #FFE694;
+}
+#myContent {
+margin: 5px 10px;
+}
+#headerDiv a {
+float: right;
+margin: 10px 10px 5px 5px;
+}
+#headerDiv a:hover {
+color: #FFFFFF;
+}

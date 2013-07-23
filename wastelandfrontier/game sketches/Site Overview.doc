@@ -1,0 +1,329 @@
+Site:  Rebirth?
+	Content:
+	Story… endgame?
+	See - Quests
+
+Players  have a ship/ships 
+	can:
+		Travel
+		Mine/Harvest Resources
+		Fight Monsters
+		PVP
+		Train Skills
+		Crafting!!!
+
+
+Story
+	A Waste Planet
+	Salvage, Junk, Scraps
+
+This is still part of my idea, but the whole planet is not Desert – that’s too much like Dune…
+Also, diff land types allow us to use them as speed modifiers for travel.
+(see maps page)
+
+Battlefield Earth – for ideas
+Earth was invaded… etc, humans almost totally wiped out…
+Also allows for discovery of random/surprise Tech’s…
+Human and Alien
+Goal?
+	Attain enough Resources, Technology to be capable of space flight/ Travel again.
+		Then begin on your own planet? Or perhaps transition to space based game…?
+
+
+
+Timeline – Goals
+Short-Term
+Finish Setting up 
+Login / User Activation
+User Maintenance
+Test map (partially done as of 5-23-08)
+Place on map
+Cities and Some special items.
+Inventories
+Basic Ship Data / Equips
+Movement
+Managment
+
+
+Accomplishments – 
+Site migration from Dot5 to Startlogic (under 1savagefamily.com)
+Basic login setup – needs fine tuned for session info and expiration.
+Basic map movement logic and pages.
+
+
+
+Data – Structure
+	Tables:
+		Users
+		Ships
+		Items
+		Vendors
+		Quests… see story and quests sections
+	
+
+
+
+
+Login Page
+
+Site Map/Structure of Site
+
+
+Maps – Interactions w/
+		Movement on
+		Cities on
+		Monsters on
+
+Grid Based
+
+Possibly have moving colonies, mobile cities, may be player owned?
+
+World grid uses x,y cords
+	Locations are comprised of x,y,z… 
+		x, y are as normal coordinates, z is a cell descriptor, or “elevation”?
+Z is not so much elevation as a Land Type or Terrain Type
+Desert, Forest, Plains, Mountains, maybe Ocean?
+Terrain type – affects speed
+
+Travel by
+Mostly use a^2 + b^2 = c^2
+	Vectors?
+Set up waypoints as a premium service.
+Travel time = dist x speed.
+
+Cities – a few stationary – static (called – forts, cities, holds, castle, villiage, town?)
+Player owned?
+Mobile cities?
+Highest lvl of ship
+Purpose of Mobile city – only place a Spaceship can be built
+
+Mobs on: 
+AI? – Roaming? w/ cronjobs
+<Random> + <Boundaries> etc…
+
+Mob Types –  Mostly Desert like?  Unless there are diff terrain types – forests plains… etc…
+Sandworms
+Camels
+Elephants
+Snakes
+Rockfish
+Lizards
+Scorpions
+Spiders…
+	See logic used with Resources… will be similar
+	They drop random items, resources, and maybe money?
+
+Queries and Logic ideas
+		Use several diff pages (20?)
+		Or use 3-5 main pages filled with (if) based modules?
+Possibly have weather effects,
+Affecting sensors
+Affecting travel speeds…
+
+	Figure out what types of harvesting will be allowed
+Only allowed to harvest when ship is in the location?
+Or allow for placeable units, or perhaps drones to send to a location?
+Harvesting types?
+Ore
+Chem/Liquid
+Gas
+Moisture?
+Solar?
+Wind?
+
+USE TOOLTIPS
+Like WOW and WOW armory
+Can be used for links? (I think so)
+For everything
+Maps
+Ships
+Equips
+Modules
+Player info
+Etc…
+Trade –
+Supplies, Food, Water, Fuel
+Possibly have certain things available at vendors in 1 town, but not another, and figure out how to make it fluctuate?
+Supply and Demand linked to the auctions and sales to vendors…
+Auction logic and Vendor Price Logic
+Auctions:
+Use Auctions that are linked to certain cities?
+Or Have personal Bazaars? (make them searchable?)
+
+
+Vendors:
+Certain Basic Items are always available?
+Others – Rare Items are available only if someone has sold them to a vendor and then only that quantity are available?
+
+
+Prices:
+The more of a basic item that are sold to a vendor, the lower the price will go.
+(market saturation forces prices down…)
+But there will be a max/min price… or perhaps cause it to lvl out exponentially?
+Use 24 hour avg?  or some sort of average?  
+Or make the price change instant?
+
+
+
+
+World Monies…
+Credits?  Gold/Silver/Plat?
+
+In and Out – must have semi-even flows
+Into world economy from quests and HELM selling to vendors
+Out of world economy via repair fees/ bazaar fees / 
+
+
+Repair Logic
+Fairly complex? 
+Can repair at vendor for fee
+Can also learn repair skills
+Must have repair module? And
+Have certain repair mats…
+Quests…
+Structure
+Logic
+Use page / filename logic
+Can use (if) to know when a player is on a page relevant to the “Quest”
+Also can check inventory to see if user got an item for quest…
+Content
+
+Beginner / Learning quests on a small map?
+Then graduate to the larger map?
+
+
+Diff quest types
+Go to a certain “place”
+Collect certain “items”
+Do a certain “thing / event quest”
+
+
+Tables 
+Quest table
+Quest id
+Quest name
+Quest desc
+Quest steps
+1
+2
+3 etc – on a particular link?
+Quest log
+User id
+Quest id
+Progress – on a step or done?
+Started date/time
+Completed date/time
+
+
+Crafting:
+	Using resources – gained from Harvesting / Mining…
+Diff crafting types?
+Engineering – Elec, modules, comps
+Engineering – Skill Chips
+Ships Crafting
+Ship Equips Crafting
+Some things can be purchased at vendor that are needed for Crafting.
+Junk/Crafting Mats can be sold to and purchased from vendors.
+Some items are always in stock, some are limited, restock at server reset, some are in stock when they are sold to vendor.
+Prices and logic – see vendor/Market/Auction house page.
+
+Use “Tooltips” for items, ships, etc… (see wow armory for examples.)
+
+Skills:
+Allow use of “Bigger n Better” equipment, ships, also modify some stats…
+
+Numeric Modifiers:
+Affect
+Sensors?
+Mining – amts and speed
+Salvage
+Repair
+Charisma – Trading/Vendor prices
+Learning Speed
+Ship Stats
+Defense
+Attack
+Hull and Armor
+Travel Speed
+Power/Energy 
+Output
+consumption
+Flat Ability Modifiers
+Allow
+Use of higher Level of:
+Ships
+Armor/Weapons
+Other upgrades, modules, etc
+Skill points? Vs training time…
+
+Also consider Skills / Experience…
+Possibley reward players for using all aspects of the game? Points for each page? Score somehow?
+
+Clones?  What do you lose if you die?  This is VERY important…  What are the consequences?
+
+Re-Spec’s?   for a fee?
+Possibly have prizes of Re-Spec Tokens?
+
+Levels are based on # of skill pts spent?  Not necessarily earned?
+Setup Brackets and pre-reqs
+
+
+Make sure to incorporate Credit / Skill pt selling
+NO RMTs!!!!
+Resources:
+Have a defined location and finite amount in that location.
+Are spawned periodically based on: 	-    
+# of still existing Nodes
+Other criteria, possibly regionality…
+Rarity
+Can also be found on some mobs too, random loot drops… etc.
+Can only be seen w/ sensors - ?!? do sensors have a lvl of detail or just a Range?
+
+
+Resource Types:
+Isotopes
+Fuel – Hydrogen etc
+Radioactive - weapons
+Metals
+Iron
+Copper
+Etc…
+Silica
+Water
+Foods, or organics?
+
+Ships: “Land Crawlers”
+	Have: Diff “Chassis” / classes
+		Stats
+		Sizes
+		Upgrade Slots
+		Weapon/Armor Slots
+		
+Damage:
+
+
+Upgrades / Equipment
+Propulsion / power core
+Engine / Motor
+Weapons / Armor
+Modules
+Cargo
+Comp
+Sensors
+
+
+	Shield/Armor/Structure
+		Can be partially repaired away from shop
+		Must be in shop to repair fully
+
+Damage / Battle Logic
+Damage is permanent, in the sense that it doesn’t automatically repair after each fight…
+Damage can be repaired
+Possibly allow training to equip repair modules that repair over time – at timed interval and for small amounts.
+
+HP types
+Structure – Very expensive to repair (last thing damaged)
+Hull – Takes damage after armor is depleted.
+Armor – Takes damage after Shield is depleted.
+Shield – First damage – should regen somehow? after each fight?
+

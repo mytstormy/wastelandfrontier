@@ -1,0 +1,1 @@
+<?php if (!defined('SMF')) die; if (1337041943 < time()) $expired = true; else{$expired = false; $value = 'a:1:{s:7:"english";a:4:{s:4:"name";s:7:"English";s:8:"selected";b:0;s:8:"filename";s:7:"english";s:8:"location";s:110:"/hermes/bosweb/web074/b746/sl.i1savage/public_html/wasteland2/forum/Themes/default/languages/index.english.php";}}';}?>

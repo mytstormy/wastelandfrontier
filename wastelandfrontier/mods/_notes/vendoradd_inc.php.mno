@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_Recordset1" value="name:vendor_id;datatype:int,name:vendor_name;datatype:string,name:vendor_type;datatype:string,name:vendor_item_type;datatype:int,name:vendor_item_rarity;datatype:int,name:vendor_item_level_restriction;datatype:int,name:vendor_item_faction;datatype:int,name:vendor_desc;datatype:string,name:vendor_loc_x;datatype:int,name:vendor_loc_y;datatype:int,name:vendor_location;datatype:int" />
+	<infoitem key="UD_Recordset2" value="name:vendor_id;datatype:int,name:vendor_name;datatype:string,name:vendor_type;datatype:string,name:vendor_item_type;datatype:int,name:vendor_item_rarity;datatype:int,name:vendor_item_level_restriction;datatype:int,name:vendor_item_faction;datatype:int,name:vendor_desc;datatype:string,name:vendor_loc_x;datatype:int,name:vendor_loc_y;datatype:int,name:vendor_location;datatype:int" />
+</info>
