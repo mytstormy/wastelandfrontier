@@ -63,9 +63,17 @@ Worklog: <br /><br />
 
 7/10/2012: <br />
 <ul>
-	<li>Fixed Cell Details page - last update broke it a little ;)  </li>
+    <li>Fixed Cell Details page - last update broke it a little ;)  </li>
 	<li> </li>
 	<li>  </li>
+</ul>
+
+7/23/2013: <br />
+<ul>
+    <li>Moved things over to C9.io and GIThub... working from the cloud now?</li>
+	<li>Created and Updated the game plan - versioning and features for each version... </li>
+    <li>Getting back into this... I've been a T2 for almost a year now, just made T3.  </li>
+    <li>  </li>
 </ul>
 
 
