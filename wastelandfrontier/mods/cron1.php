@@ -1,4 +1,5 @@
 <?php
+// cron1.php - automated game scripts - run every 5 min
 
 // db properties
 $dbhost = 'i1savage.startlogicmysql.com';
