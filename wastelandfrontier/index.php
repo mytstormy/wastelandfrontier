@@ -174,7 +174,7 @@ on things.  At the moment - keep in mind this is a <strong><em>Rough</em></stron
 		
   <p>&nbsp; 
       <?php
-      include 'mods/worklog_inc.php';
+      include 'worklog_inc.php';
 }
       ?> </p>
   </p>
