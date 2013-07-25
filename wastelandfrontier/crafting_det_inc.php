@@ -1,4 +1,4 @@
-<?php include_once('Connections/Rebirth1.php'); ?>
+<?php include_once('mods/Connections/Rebirth1.php'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
 function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
@@ -43,10 +43,10 @@ $totalRows_Recordset1 = mysql_num_rows($Recordset1);
 ?>
 <?php
 
+		include_once 'mods/mods/vehicleinfo.php';
+		include_once 'mods/mods/userinfo.php';
 		include_once 'mods/vehicleinfo.php';
 		include_once 'mods/userinfo.php';
-		include_once 'vehicleinfo.php';
-		include_once 'userinfo.php';
 
 
 			// crafting details page - lists the actual recipes the crafting category that was chosen
@@ -75,7 +75,7 @@ $totalRows_Recordset1 = mysql_num_rows($Recordset1);
 
 ?>
 
-<form action="recipe.php" method="post"><table width="200" border="1">
+<form action="mods/recipe.php" method="post"><table width="200" border="1">
   <tr>
     <td colspan="3">Recipes for this Category</td>
   </tr>

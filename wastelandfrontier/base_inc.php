@@ -1,9 +1,9 @@
 <?php
+// comment added in c9.io - testing sync settings...
+
 
 		include_once 'mods/vehicleinfo.php';
 		include_once 'mods/userinfo.php';
-		include_once 'vehicleinfo.php';
-		include_once 'userinfo.php';
 
 
 ?>
@@ -61,7 +61,7 @@
 							<td>Name:</td>
 							<td><?php echo $vehicle_name; ?></td>
 							<td>Equipment Button <br />
-							(<a href="mods.php">to mods page</a>)</td>
+							(<a href="mods/mods.php">to mods page</a>)</td>
 						</tr>
 						<tr>
 							<td>Desc:</td>
@@ -142,7 +142,7 @@
 				
 					// inventory
 						// might as well try to include the inventory include? :)
-						include 'mods/inventory_inc.php';
+						include 'inventory_inc.php';
 						// sell items from here?
 						// move b/t veh and base
 						// auction/trade?

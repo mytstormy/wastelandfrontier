@@ -1,4 +1,4 @@
-<?php require_once('Connections/Rebirth1.php'); ?>
+<?php require_once('mods/Connections/Rebirth1.php'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
 function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
@@ -43,10 +43,10 @@ $totalRows_Recordset1 = mysql_num_rows($Recordset1);
 ?>
 <?php
 
+		include_once 'mods/mods/vehicleinfo.php';
+		include_once 'mods/mods/userinfo.php';
 		include_once 'mods/vehicleinfo.php';
 		include_once 'mods/userinfo.php';
-		include_once 'vehicleinfo.php';
-		include_once 'userinfo.php';
 
 
 
@@ -249,7 +249,7 @@ $totalRows_Recordset1 = mysql_num_rows($Recordset1);
 				
 				// put a button for back to the recipe in question using a form?
 					  ?>
-					  <form action="recipe.php" method="post" name="backtorecipe">
+					  <form action="mods/recipe.php" method="post" name="backtorecipe">
 					  <input name="recipe_id" type="hidden" value="<?php echo $row_Recordset1['recipe_id']; ?>" />
 					  <input name="submit" type="submit" value="Back to Recipe" />
 					  </form>
@@ -481,7 +481,7 @@ $totalRows_Recordset1 = mysql_num_rows($Recordset1);
 				// allow to go back to the recipe to craft again?
 				
 					?>
-					<form action="recipe.php" method="post" name="backtorecipe">
+					<form action="mods/recipe.php" method="post" name="backtorecipe">
 					<input name="recipe_id" type="hidden" value="<?php echo $row_Recordset1['recipe_id']; ?>" />
 					<input name="submit" type="submit" value="Create Again?" />
 					</form>

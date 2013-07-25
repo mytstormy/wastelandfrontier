@@ -5,7 +5,7 @@
 @Author = Kent Savage
 */
 
-		include_once 'mods/vehicleinfo.php';
+		include_once 'mods/mods/vehicleinfo.php';
 		
 		// set the default cell detail location to the vehicle's current location - if location is unset, set it to the destination?  need to work out how that works... actually...
 		if(isset($_GET["loc_x"]) && isset($_GET["loc_y"])){
@@ -177,7 +177,7 @@
 			echo '<td>';
 			if ($vehiclestatus == 'Active' && $vehicle_loc_x == $det_loc_x && $vehicle_loc_y == $det_loc_y && $cellmobs['mob_hp'] > 0) {
 			?>
-            <form action="battle.php" method="post" name="battleform">
+            <form action="mods/battle.php" method="post" name="battleform">
             <input name="mob_id" type="hidden" value="<?php echo $cellmobs['mob_id']; ?>" />
             <input name="submit" type="submit" value="Fight" />
             </form>

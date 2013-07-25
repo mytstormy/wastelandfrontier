@@ -1,7 +1,7 @@
 <?php
 
-		include_once 'mods/vehicleinfo.php';
-		include_once 'mods/userinfo.php';
+		include_once 'mods/mods/vehicleinfo.php';
+		include_once 'mods/mods/userinfo.php';
 
 
 ?>
@@ -99,7 +99,7 @@
 					<br /><br />
 					
 					
-					<form action="usermgmt.php" method="post">
+					<form action="mods/usermgmt.php" method="post">
 					<table border="1" cellpadding="1">
 						<tr COLSPAN=3>
 							<td>Other Info:</td>

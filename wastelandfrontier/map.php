@@ -50,14 +50,14 @@ include 'minimap.php';
 <div id="banner">
 The banner and whatnot... ofcourse.
 <?php
-include 'banner.php';
+include 'banner_inc.php';
 ?>
 </div>
 
 <div id="nav">
   <p>
       <?php
-include 'nav.php';
+include 'nav_inc.php';
 ?>
 
   </p>
@@ -80,7 +80,7 @@ Like... it should look like a map... </p>
 */
 
 // turn this next section into the map_inc
-		include 'mods/map_inc.php';
+		include 'map_inc.php';
 		
 // what this include does, where it gets its info from...
 // builds the main map page including navigation around the map or movment on it.
@@ -96,7 +96,7 @@ Like... it should look like a map... </p>
 
 // check to see if they have a vehicle on the map - if so, start with it's location, if not - return an error...
 		include 'mods/vehicleinfo.php';
-		include 'mods/travel_inc.php';
+		include 'travel_inc.php';
 		
 		
 			if ($vehiclestatus == 'Active') {
@@ -189,7 +189,7 @@ Like... it should look like a map... </p>
 
       <div id="footer">
       <?php
-      include 'footer.php';
+      include 'footer_inc.php';
       ?> 
       </div>
 
@@ -198,7 +198,7 @@ Like... it should look like a map... </p>
 <div id="statbar">
   <p>
       <?php
-include 'statbar.php';
+include 'statbar_inc.php';
 ?>
 
   </p>

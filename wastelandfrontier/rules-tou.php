@@ -13,7 +13,7 @@
 
       <div id="footer">
       <?php
-      include 'footer.php';
+      include 'footer_inc.php';
       ?> 
       </div>
 

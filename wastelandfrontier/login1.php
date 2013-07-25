@@ -151,14 +151,14 @@ include 'minimap.php';
 <div id="banner">
 The banner and whatnot... ofcourse.
 <?php
-include 'banner.php';
+include 'banner_inc.php';
 ?>
 </div>
 
 <div id="nav">
   <p>
       <?php
-include 'nav.php';
+include 'nav_inc.php';
 ?>
 
   </p>
@@ -192,11 +192,8 @@ if ($errorMessage != '') {
  </table>
 </form>
 
-  <p>Blah, Blah, Blah...</p>
-  <p>yep, i said some stuff b4, now i'll say some more...</p>
-  <p>the latest is that i'm ditching Dot5... and this in now in a sub folder of the savage fam site. we'll see how things go. maybe this will get its own site. </p>
-  <p>Thanks,</p>
-<p>Admin</p>
+  <p>&nbsp;</p>
+  <p>Please try logging in again.</p>
 </div>
 </body>
 </html>

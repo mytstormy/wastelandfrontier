@@ -112,14 +112,14 @@ include 'minimap.php';
 <div id="banner">
 The banner and whatnot... ofcourse.
 <?php
-include 'banner.php';
+include 'banner_inc.php';
 ?>
 </div>
 
 <div id="nav">
   <p>
       <?php
-include 'nav.php';
+include 'nav_inc.php';
 ?>
 
   </p>
@@ -128,7 +128,7 @@ include 'nav.php';
 <div id="content">
   <p>
     <?php
-include 'mods/vendoradd_inc.php';
+include 'vendoradd_inc.php';
 ?>
 </p>
   <p>&nbsp;</p>

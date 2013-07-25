@@ -1,9 +1,52 @@
+<?php require_once('mods/Connections/Rebirth1.php'); ?>
+<?php
+if (!function_exists("GetSQLValueString")) {
+function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
+{
+  if (PHP_VERSION < 6) {
+    $theValue = get_magic_quotes_gpc() ? stripslashes($theValue) : $theValue;
+  }
+
+  $theValue = function_exists("mysql_real_escape_string") ? mysql_real_escape_string($theValue) : mysql_escape_string($theValue);
+
+  switch ($theType) {
+    case "text":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;    
+    case "long":
+    case "int":
+      $theValue = ($theValue != "") ? intval($theValue) : "NULL";
+      break;
+    case "double":
+      $theValue = ($theValue != "") ? doubleval($theValue) : "NULL";
+      break;
+    case "date":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;
+    case "defined":
+      $theValue = ($theValue != "") ? $theDefinedValue : $theNotDefinedValue;
+      break;
+  }
+  return $theValue;
+}
+}
+
+$session_user_id_Recordset1 = "1";
+if (isset($_SESSION["user_id"])) {
+  $session_user_id_Recordset1 = $_SESSION["user_id"];
+}
+mysql_select_db($database_Rebirth1, $Rebirth1);
+$query_Recordset1 = sprintf("SELECT * FROM tbl_items, tbl_vehicle_types WHERE item_type_id = vehicle_item_type_id and item_user_id = %s", GetSQLValueString($session_user_id_Recordset1, "int"));
+$Recordset1 = mysql_query($query_Recordset1, $Rebirth1) or die(mysql_error());
+$row_Recordset1 = mysql_fetch_assoc($Recordset1);
+$totalRows_Recordset1 = mysql_num_rows($Recordset1);
+?>
 <?php
 
+		include_once 'mods/mods/vehicleinfo.php';
+		include_once 'mods/mods/userinfo.php';
 		include_once 'mods/vehicleinfo.php';
 		include_once 'mods/userinfo.php';
-		include_once 'vehicleinfo.php';
-		include_once 'userinfo.php';
 
 
 ?>
@@ -126,44 +169,26 @@
 						
 					
 						
-	$sqlaltvehicles = "SELECT *
-	        FROM tbl_items, tbl_vehicle_types
-			WHERE item_type_id = vehicle_item_type_id and item_user_id = '$user_id'";
-	
-	$resultaltvehicles = mysql_query($sqlaltvehicles) or die('Query failed. ' . mysql_error()); 
 	
 					?>
                     
-					<form>
+					<form method="post">
 					<table border="1" cellpadding="1">
 						<tr>
 							<td COLSPAN=3>Other Vehicles:</td>
+                        </tr>
 						<tr>
 							<td>Name:</td>
 							<td>Status/Location:</td>
 							<td>Select to Activate:</td>
 						</tr>
-						</tr>
-                        <?php
-						while($altvehicles = mysql_fetch_array($resultaltvehicles,MYSQL_ASSOC)){
-							
-							?>
-						<tr>
-							<td><?php echo $altvehicles[vehicle_type_name]; ?></td>
-							<td><?php echo "Inactive / 0,0  "; // currently home coords
-							echo $user_home_x; echo ","; echo $user_home_y; ?></td>
-							<td><input type="radio" name="alt_veh" value="from query" /> from query1 </td>
-						</tr>
-							
-                            
-                            <?php
-							}
-						?>
-						<tr>
-							<td>Name:</td>
-							<td>$veh_name here...</td>
-							<td><input type="radio" name="alt_veh" value="from query" /> from query2 </td>
-						</tr>
+						<?php do { ?>
+					    <tr>
+						    <td><?php echo $row_Recordset1['vehicle_type_name']; ?></td>
+						    <td><?php echo $row_Recordset1['item_status']; ?>/<?php echo $row_Recordset1['item_location']; ?></td>
+						    <td><input type="radio" name="alt_veh" value="<?php echo $row_Recordset1['item_id']; ?>" />This One</td>
+					      </tr>
+						  <?php } while ($row_Recordset1 = mysql_fetch_assoc($Recordset1)); ?>
 						<tr>
 							<td COLSPAN=3>Warning - changing veh will un-equip all mods on current active vehicle.</td>
 						</tr>
@@ -171,12 +196,12 @@
 							<td COLSPAN=3>Also - inventory must be empty before changing active vehicle.</td>
 						</tr>
 						<tr>
-							<td COLSPAN=3 align="right">Change Button Here</td>
+							<td COLSPAN=3 align="right"><input type="submit" name="button" id="button" value="Submit" /></td>
 						</tr>
 					</table>
 					</form>
 					
-					<br />
+<br />
 					
 					<?php
 					
@@ -192,7 +217,7 @@
 				
 					// inventory
 						// might as well try to include the inventory include? :)
-						include 'mods/inventory_inc.php';
+				//		include 'mods/mods/inventory_inc.php';
 						// sell items from here?
 						// move b/t veh and base
 						// auction/trade?
@@ -252,4 +277,6 @@
 			
 
 
+
+mysql_free_result($Recordset1);
 ?>

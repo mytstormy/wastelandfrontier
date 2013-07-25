@@ -50,14 +50,14 @@ include 'minimap.php';
 <div id="banner">
 The banner and whatnot... ofcourse.
 <?php
-include 'banner.php';
+include 'banner_inc.php';
 ?>
 </div>
 
 <div id="nav">
   <p>
       <?php
-include 'nav.php';
+include 'nav_inc.php';
 ?>
 
   </p>
@@ -75,7 +75,7 @@ include 'content.php';
 
 <p>
 <?php
-		include 'mods/base_inc.php';	
+		include 'base_inc.php';	
 ?>
 </p>
 <p>&nbsp;</p>
@@ -83,7 +83,7 @@ include 'content.php';
 
       <div id="footer">
       <?php
-      include 'footer.php';
+      include 'footer_inc.php';
       ?> 
       </div>
 
@@ -91,7 +91,7 @@ include 'content.php';
 <div id="statbar">
   <p>
       <?php
-include 'statbar.php';
+include 'statbar_inc.php';
 ?>
 
   </p>

@@ -1,9 +1,11 @@
 <?php
+// comment added in c9.io - testing sync settings...
 
+
+		include_once 'mods/mods/vehicleinfo.php';
+		include_once 'mods/mods/userinfo.php';
 		include_once 'mods/vehicleinfo.php';
 		include_once 'mods/userinfo.php';
-		include_once 'vehicleinfo.php';
-		include_once 'userinfo.php';
 
 
 		
@@ -247,7 +249,7 @@ echo 'The Mob retains ' . $new_mob_hp . ' hit points.<br /><br />';
 				
 				if(($new_vehicle_core_hp > 0) and ($new_mob_hp > 0)){
 				?>
-                  <form action="battle.php" method="post" name="battleform">
+                  <form action="mods/battle.php" method="post" name="battleform">
                   <input name="mob_id" type="hidden" value="<?php echo $mob_id; ?>" />
                   <input name="submit" type="submit" value="Fight Again" />
                   </form>

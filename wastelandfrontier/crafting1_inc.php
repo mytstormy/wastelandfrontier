@@ -1,9 +1,9 @@
 <?php
 
+		include_once 'mods/mods/vehicleinfo.php';
+		include_once 'mods/mods/userinfo.php';
 		include_once 'mods/vehicleinfo.php';
 		include_once 'mods/userinfo.php';
-		include_once 'vehicleinfo.php';
-		include_once 'userinfo.php';
 
 
 
@@ -30,7 +30,7 @@
   <tr>
     <td colspan="3">Currently only allowed in Cities.</td>
   </tr>
-  <form name="form1" method="post" action="craftingdet.php">
+  <form name="form1" method="post" action="mods/craftingdet.php">
   <tr>
     <td>Refining:</td>
     <input type="hidden" name="recipe_category" value="1">

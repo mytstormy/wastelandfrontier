@@ -76,5 +76,14 @@ Worklog: <br /><br />
     <li>  </li>
 </ul>
 
+7/24/2013: <br />
+<ul>
+    <li>Adjusting where the mods/includes are stored and where they link to/from - same directory for now is easier than trying to sort out all the relative links etc.. </li>
+	<li>Anything that is _inc.php will be in the root... some mods are still in the Mods folder...</li>
+	<li>After that - whats broken??? </li>
+    <li></li>
+    <li>  </li>
+</ul>
+
 
 <br />

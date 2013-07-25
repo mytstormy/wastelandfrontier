@@ -50,14 +50,14 @@ include 'minimap.php';
 <div id="banner">
 The banner and whatnot... ofcourse.
 <?php
-include 'banner.php';
+include 'banner_inc.php';
 ?>
 </div>
 
 <div id="nav">
   <p>
       <?php
-include 'nav.php';
+include 'nav_inc.php';
 ?>
 
   </p>
@@ -89,7 +89,7 @@ Like... it should look like a map... </p>
 */
 
 // turn this next section into the map_inc
-		include 'mods/map_inc.php';
+		include 'map_inc.php';
 		
 // what this include does, where it gets its info from...
 // builds the main map page including navigation around the map or movment on it.
@@ -193,7 +193,7 @@ Like... it should look like a map... </p>
 */
 
 // turn this next section into the map_inc
-		include 'mods/map_inc.php';
+		include 'map_inc.php';
 		
 // what this include does, where it gets its info from...
 // builds the main map page including navigation around the map or movment on it.
@@ -298,7 +298,7 @@ Like... it should look like a map... </p>
 */
 
 // turn this next section into the map_inc
-		include 'mods/map_inc.php';
+		include 'map_inc.php';
 		
 // what this include does, where it gets its info from...
 // builds the main map page including navigation around the map or movment on it.
