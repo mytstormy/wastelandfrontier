@@ -60,7 +60,7 @@ $totalRows_Recordset1 = mysql_num_rows($Recordset1);
 Lets see.... i'm not sure where to begin... but i might as well start somewhere...<br />
 You are currently at: <font color="purple"> <?php echo $fiel_name; ?></font>
 <br />
-To reset to ship loc : <a href="insupmapedit.php?reset=1">Reset to Ship Loc</a><br />
+To reset to ship loc : <a href="maptest2_edit.php?reset=1">Reset to Ship Loc</a><br />
 <br />
 <table width="140" height="140" border="1" bordercolor="#003333">
 <tr>
@@ -76,15 +76,15 @@ To reset to ship loc : <a href="insupmapedit.php?reset=1">Reset to Ship Loc</a><
 </tr>
 <tr>
   <td nowrap="nowrap"></td>
-  <td nowrap="nowrap"><a href="insupmapedit.php?x=-1&amp;y=1"><img src="img/diagul.gif" alt="Up and Left" /></a></td>
+  <td nowrap="nowrap"><a href="maptest2_edit.php?x=-1&amp;y=1"><img src="img/diagul.gif" alt="Up and Left" /></a></td>
   <td nowrap="nowrap"><?php
   print $center_loc_x;
   echo ", ";
   print $center_loc_y+1;
   ?>
-  <a href="insupmapedit.php?x=0&amp;y=1"><img src="img/up.gif" alt="Up" /></a>
+  <a href="maptest2_edit.php?x=0&amp;y=1"><img src="img/up.gif" alt="Up" /></a>
   </td>
-  <td nowrap="nowrap"><a href="insupmapedit.php?x=1&amp;y=1"><img src="img/diagur.gif" alt="Up and Right" /></a></td>
+  <td nowrap="nowrap"><a href="maptest2_edit.php?x=1&amp;y=1"><img src="img/diagur.gif" alt="Up and Right" /></a></td>
   <td nowrap="nowrap"></td>
 </tr>
 <tr>
@@ -93,7 +93,7 @@ To reset to ship loc : <a href="insupmapedit.php?reset=1">Reset to Ship Loc</a><
   echo ", ";
   print $center_loc_y;
   ?></td>
-  <td nowrap="nowrap">  <a href="insupmapedit.php?x=-1&amp;y=0"><img src="img/left.gif" alt="left" /></a>
+  <td nowrap="nowrap">  <a href="maptest2_edit.php?x=-1&amp;y=0"><img src="img/left.gif" alt="left" /></a>
 <?php
   print $center_loc_x-1;
   echo ", ";
@@ -112,16 +112,16 @@ To reset to ship loc : <a href="insupmapedit.php?reset=1">Reset to Ship Loc</a><
     <?php if ($totalRows_Recordset1 == 0) { // Show if recordset empty ?>
     <table width="30" border="1" cellpadding="1">
       <tr>
-        <td><a href="insupmapedit.php?insert=1">Desert</a></td>
-        <td><a href="insupmapedit.php?insert=2">Forest</a></td>
+        <td><a href="maptest2_edit.php?insert=1">Desert</a></td>
+        <td><a href="maptest2_edit.php?insert=2">Forest</a></td>
       </tr>
       <tr>
-        <td><a href="insupmapedit.php?insert=3">Plains</a></td>
-        <td><a href="insupmapedit.php?insert=4">Mountain</a></td>
+        <td><a href="maptest2_edit.php?insert=3">Plains</a></td>
+        <td><a href="maptest2_edit.php?insert=4">Mountain</a></td>
       </tr>
       <tr>
-        <td><a href="insupmapedit.php?insert=5">Water</a></td>
-        <td><a href="insupmapedit.php?insert=6">Ocean</a></td>
+        <td><a href="maptest2_edit.php?insert=5">Water</a></td>
+        <td><a href="maptest2_edit.php?insert=6">Ocean</a></td>
       </tr>
         </table>
     <?php } // Show if recordset empty ?></td>
@@ -131,7 +131,7 @@ To reset to ship loc : <a href="insupmapedit.php?reset=1">Reset to Ship Loc</a><
   echo ", ";
   print $center_loc_y;
   ?>
-  <a href="insupmapedit.php?x=1&amp;y=0"><img src="img/right.gif" alt="Right" /></a>
+  <a href="maptest2_edit.php?x=1&amp;y=0"><img src="img/right.gif" alt="Right" /></a>
   </td>
   <td nowrap="nowrap"><?php
   print $center_loc_x+2;
@@ -141,15 +141,15 @@ To reset to ship loc : <a href="insupmapedit.php?reset=1">Reset to Ship Loc</a><
 </tr>
 <tr>
   <td nowrap="nowrap"></td>
-  <td nowrap="nowrap"><a href="insupmapedit.php?x=-1&amp;y=-1"><img src="img/diagdl.gif" alt="Down and Left" /></a></td>
+  <td nowrap="nowrap"><a href="maptest2_edit.php?x=-1&amp;y=-1"><img src="img/diagdl.gif" alt="Down and Left" /></a></td>
   <td nowrap="nowrap"><?php
   print $center_loc_x;
   echo ", ";
   print $center_loc_y-1;
   ?>
-  <a href="insupmapedit.php?x=0&amp;y=-1"><img src="img/down.gif" alt="Down" /></a>
+  <a href="maptest2_edit.php?x=0&amp;y=-1"><img src="img/down.gif" alt="Down" /></a>
   </td>
-  <td nowrap="nowrap"><a href="insupmapedit.php?x=1&amp;y=-1"><img src="img/diagdr.gif" alt="Down and Right" /></a></td>
+  <td nowrap="nowrap"><a href="maptest2_edit.php?x=1&amp;y=-1"><img src="img/diagdr.gif" alt="Down and Right" /></a></td>
   <td nowrap="nowrap"></td>
 </tr>
 <tr>

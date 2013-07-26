@@ -8,7 +8,6 @@
 <file name="content.php" server="1savagefamily.com" local="129509496000000000" remote="129509496000000000" />
 <file name="expired.php" server="1savagefamily.com" local="129509496000000000" remote="129509496000000000" />
 <file name="index.php" server="1savagefamily.com" local="129675813600000000" remote="129675813600000000" />
-<file name="insupmapedit.php" server="1savagefamily.com" local="129509496000000000" remote="129509496000000000" />
 <file name="inventory.php" server="1savagefamily.com" local="129546648000000000" remote="129546648000000000" />
 <file name="login.php" server="1savagefamily.com" local="129487032000000000" remote="129487032000000000" />
 <file name="login1.php" server="1savagefamily.com" local="129509496000000000" remote="129509496000000000" />
@@ -55,10 +54,10 @@
 <file name="minimap.php" server="wastelandfrontier.com//public_html/wasteland2/" local="129509496000000000" remote="129509496000000000" />
 <file name="content.php" server="wastelandfrontier.com//public_html/wasteland2/" local="129509496000000000" remote="129509496000000000" />
 <file name="forumlink.php" server="wastelandfrontier.com//public_html/wasteland2/" local="129843000000000000" remote="129843000000000000" />
-<file name="forumreg.php" server="wastelandfrontier.com//public_html/wasteland2/" local="129841022200000000" remote="130134790200000000" />
+<file name="forumreg.php" server="wastelandfrontier.com//public_html/wasteland2/" local="130192799666168881" remote="130192899000000000" />
 <file name="admin.php" server="wastelandfrontier.com//public_html/wasteland2/" local="130191987639202819" remote="130192063800000000" />
 <file name="celldetail.php" server="wastelandfrontier.com//public_html/wasteland2/" local="130191988777086285" remote="130192064400000000" />
-<file name="index.php" server="wastelandfrontier.com//public_html/wasteland2/" local="130191987570559102" remote="130192064400000000" />
+<file name="index.php" server="wastelandfrontier.com//public_html/wasteland2/" local="130192694614774639" remote="130192899000000000" />
 <file name="inventory.php" server="wastelandfrontier.com//public_html/wasteland2/" local="130191988793278341" remote="130192064400000000" />
 <file name="map.php" server="wastelandfrontier.com//public_html/wasteland2/" local="130191988797293851" remote="130192064400000000" />
 <file name="navedit.php" server="wastelandfrontier.com//public_html/wasteland2/" local="130191987574709629" remote="130192064400000000" />
@@ -94,7 +93,9 @@
 <file name="mapedit.php" server="wastelandfrontier.com//public_html/wasteland2/" local="130191985518175490" remote="130192064400000000" />
 <file name="nav_inc.php" server="wastelandfrontier.com//public_html/wasteland2/" local="129843000000000000" remote="130192064400000000" />
 <file name="statbar_inc.php" server="wastelandfrontier.com//public_html/wasteland2/" local="129857688000000000" remote="130192064400000000" />
-<file name="travel_inc.php" server="wastelandfrontier.com//public_html/wasteland2/" local="129515544000000000" remote="130192064400000000" />
+<file name="travel_inc.php" server="wastelandfrontier.com//public_html/wasteland2/" local="130192812020136057" remote="130192899000000000" />
 <file name="vendoradd_inc.php" server="wastelandfrontier.com//public_html/wasteland2/" local="130191981814456872" remote="130192064400000000" />
 <file name="vendors_inc.php" server="wastelandfrontier.com//public_html/wasteland2/" local="130191981816462126" remote="130192064400000000" />
+<file name="maptest2.php" server="wastelandfrontier.com//public_html/wasteland2/" local="130192807447676919" remote="130192899000000000" />
+<file name="maptest2_edit.php" server="wastelandfrontier.com//public_html/wasteland2/" local="129509496000000000" remote="130192899000000000" />
 </dwsync>
