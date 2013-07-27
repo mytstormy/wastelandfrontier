@@ -1,4 +1,4 @@
-<?php require_once('mods/Connections/Rebirth1.php'); ?>
+<?php require_once('Connections/Rebirth1.php'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
 function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
@@ -43,8 +43,6 @@ $totalRows_Recordset1 = mysql_num_rows($Recordset1);
 ?>
 <?php
 
-		include_once 'mods/mods/vehicleinfo.php';
-		include_once 'mods/mods/userinfo.php';
 		include_once 'mods/vehicleinfo.php';
 		include_once 'mods/userinfo.php';
 
@@ -182,15 +180,16 @@ $totalRows_Recordset1 = mysql_num_rows($Recordset1);
 							<td>Status/Location:</td>
 							<td>Select to Activate:</td>
 						</tr>
-						<?php do { ?>
-					    <tr>
-						    <td><?php echo $row_Recordset1['vehicle_type_name']; ?></td>
-						    <td><?php echo $row_Recordset1['item_status']; ?>/<?php echo $row_Recordset1['item_location']; ?></td>
-						    <td><input type="radio" name="alt_veh" value="<?php echo $row_Recordset1['item_id']; ?>" />This One</td>
-					      </tr>
-						  <?php } while ($row_Recordset1 = mysql_fetch_assoc($Recordset1)); ?>
-						<tr>
-							<td COLSPAN=3>Warning - changing veh will un-equip all mods on current active vehicle.</td>
+                        <?php do { ?>
+                          <tr>
+                            <td><?php echo $row_Recordset1['vehicle_type_name']; ?></td>
+                            <td><?php echo $row_Recordset1['item_status']; ?>/<?php echo $row_Recordset1['item_location']; ?></td>
+                            <td><input type="radio" name="alt_veh" value="<?php echo $row_Recordset1['item_id']; ?>" />
+                              This One</td>
+                          </tr>
+                          <?php } while ($row_Recordset1 = mysql_fetch_assoc($Recordset1)); ?>
+<tr>
+<td COLSPAN=3>Warning - changing veh will un-equip all mods on current active vehicle.</td>
 						</tr>
 						<tr>
 							<td COLSPAN=3>Also - inventory must be empty before changing active vehicle.</td>

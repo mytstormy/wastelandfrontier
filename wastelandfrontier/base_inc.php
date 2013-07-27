@@ -61,7 +61,7 @@
 							<td>Name:</td>
 							<td><?php echo $vehicle_name; ?></td>
 							<td>Equipment Button <br />
-							(<a href="mods/mods.php">to mods page</a>)</td>
+							(<a href="mods.php">to mods page</a>)</td>
 						</tr>
 						<tr>
 							<td>Desc:</td>

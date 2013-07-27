@@ -1,7 +1,7 @@
 <?php
 
-		include_once 'mods/mods/vehicleinfo.php';
-		include_once 'mods/mods/userinfo.php';
+		include_once 'mods/vehicleinfo.php';
+		include_once 'mods/userinfo.php';
 
 // list generic vendors when looking or when at the location
 // list special vendors only when in that location

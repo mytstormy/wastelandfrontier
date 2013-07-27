@@ -5,7 +5,7 @@
 @Author = Kent Savage
 */
 
-		include_once 'mods/mods/vehicleinfo.php';
+		include_once 'mods/vehicleinfo.php';
 		
 		// set the default cell detail location to the vehicle's current location - if location is unset, set it to the destination?  need to work out how that works... actually...
 		if(isset($_GET["loc_x"]) && isset($_GET["loc_y"])){

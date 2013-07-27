@@ -1,7 +1,5 @@
 <?php
 
-		include_once 'mods/mods/vehicleinfo.php';
-		include_once 'mods/mods/userinfo.php';
 		include_once 'mods/vehicleinfo.php';
 		include_once 'mods/userinfo.php';
 
@@ -16,7 +14,7 @@
 				
 				
 				
-				// $_POST[variables] will take you to craftingdet.php - on to that _inc page now...
+				// $_POST[variables] will take you to crafting_det.php - on to that _inc page now...
 
 
 ?>
@@ -30,7 +28,7 @@
   <tr>
     <td colspan="3">Currently only allowed in Cities.</td>
   </tr>
-  <form name="form1" method="post" action="mods/craftingdet.php">
+  <form name="form1" method="post" action="mods/crafting_det.php">
   <tr>
     <td>Refining:</td>
     <input type="hidden" name="recipe_category" value="1">

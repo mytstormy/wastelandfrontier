@@ -53,8 +53,6 @@ $totalRows_Recordset2 = mysql_num_rows($Recordset2);
 ?>
 <?php
 
-		include_once 'mods/mods/vehicleinfo.php';
-		include_once 'mods/mods/userinfo.php';
 		include_once 'mods/vehicleinfo.php';
 		include_once 'mods/userinfo.php';
 
@@ -87,7 +85,7 @@ $totalRows_Recordset2 = mysql_num_rows($Recordset2);
 			$recipe_total_items = $row_Recordset1['recipe_total_items'];
 
 ?>
-<form action="mods/reciperesult.php" method="post" name="recipeform">
+<form action="mods/recipe_result.php" method="post" name="recipeform">
 <table width="300" border="1">
   <tr>
     <td colspan="4">Recipe Details and Material Choices: <?php echo $totalRows_Recordset1 ?></td>
