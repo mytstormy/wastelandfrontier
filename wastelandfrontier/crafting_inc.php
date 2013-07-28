@@ -13,7 +13,7 @@
 				
 				
 				
-				// $_POST[variables] will take you to craftingdet.php - on to that _inc page now...
+				// $_POST[variables] will take you to crafting_det.php - on to that _inc page now...
 
 
 ?>
@@ -24,28 +24,28 @@
   <tr>
     <td colspan="3">Currently only allowed in Cities.</td>
   </tr>
-  <form name="form1" method="post" action="mods/craftingdet.php">
+  <form name="form1" method="post" action="crafting_det.php">
   <tr>
     <td>Refining:</td>
     <input type="hidden" name="recipe_category" value="1">
     <td>&nbsp;</td>
     <td>Click here.<input type="submit" value="Here" ></td>
   </tr></form>
-  <form name="form2" method="post" action="mods/craftingdet.php">
+  <form name="form2" method="post" action="crafting_det.php">
   <tr>
     <td>Vehicle Blueprints:</td>
     <input type="hidden" name="recipe_category" value="2">
     <td>&nbsp;</td>
     <td>Click here.<input type="submit" value="Here" ></td>
   </tr></form>
-  <form name="form3" method="post" action="mods/craftingdet.php">
+  <form name="form3" method="post" action="crafting_det.php">
   <tr>
     <td>Parts Crafting:</td>
     <input type="hidden" name="recipe_category" value="3">
     <td>&nbsp;</td>
     <td>Click here.<input type="submit" value="Here" ></td>
   </tr></form>
-  <form name="form4" method="post" action="mods/craftingdet.php">
+  <form name="form4" method="post" action="crafting_det.php">
   <tr>
     <td>Reverse Engineering:</td>
     <input type="hidden" name="recipe_category" value="4">
@@ -57,14 +57,14 @@
     <td>&nbsp;</td>
     <td>&nbsp;</td>
   </tr>
-  <form name="form5" method="post" action="mods/craftingdet.php">
+  <form name="form5" method="post" action="crafting_det.php">
   <tr>
     <td>Spacecraft Blueprints:</td>
     <input type="hidden" name="recipe_category" value="5">
     <td>&nbsp;</td>
     <td>Click here.<input type="submit" value="Here" ></td>
   </tr></form>
-  <form name="form6" method="post" action="mods/craftingdet.php">
+  <form name="form6" method="post" action="crafting_det.php">
   <tr>
     <td>Spacecraft Parts:</td>
     <input type="hidden" name="recipe_category" value="6">

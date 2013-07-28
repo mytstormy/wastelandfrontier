@@ -1,7 +1,5 @@
 <?php
 
-		include_once 'mods/mods/vehicleinfo.php';
-		include_once 'mods/mods/userinfo.php';
 		include_once 'mods/vehicleinfo.php';
 		include_once 'mods/userinfo.php';
 

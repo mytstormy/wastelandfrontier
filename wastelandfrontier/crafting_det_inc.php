@@ -1,4 +1,4 @@
-<?php include_once('mods/Connections/Rebirth1.php'); ?>
+<?php include_once('Connections/Rebirth1.php'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
 function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
