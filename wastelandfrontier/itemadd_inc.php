@@ -1,4 +1,4 @@
-<?php require_once('mods/Connections/Rebirth1.php'); ?>
+<?php require_once('Connections/Rebirth1.php'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
 function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
@@ -279,7 +279,7 @@ do {
     <td><?php echo $row_Recordset1['item_status']; ?>/<?php echo $row_Recordset1['item_location']; ?></td>
     <td><?php echo $row_Recordset1['item_qty']; ?>(<?php echo $row_Recordset1['item_min_qty']; ?>/<?php echo $row_Recordset1['item_max_qty']; ?>)</td>
     <td nowrap="nowrap">
-    <form action="mods/itemadd.php" method="post" name="editpost"><input name="item_id_edit" type="hidden" value="<?php echo $row_Recordset1['item_id']; ?>" /><input name="submit" type="submit" value="Edit" /></form>/<form action="mods/itemadd.php" method="post" name="delpost"><input name="item_id_del" type="hidden" value="<?php echo $row_Recordset1['item_id']; ?>" /><input name="submit" type="submit" value="Delete" /></form>
+    <form action="itemadd.php" method="post" name="editpost"><input name="item_id_edit" type="hidden" value="<?php echo $row_Recordset1['item_id']; ?>" /><input name="submit" type="submit" value="Edit" /></form>/<form action="itemadd.php" method="post" name="delpost"><input name="item_id_del" type="hidden" value="<?php echo $row_Recordset1['item_id']; ?>" /><input name="submit" type="submit" value="Delete" /></form>
     </td>
   </tr>
   <?php } while ($row_Recordset1 = mysql_fetch_assoc($Recordset1)); ?>

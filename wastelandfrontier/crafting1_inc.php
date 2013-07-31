@@ -28,7 +28,7 @@
   <tr>
     <td colspan="3">Currently only allowed in Cities.</td>
   </tr>
-  <form name="form1" method="post" action="mods/crafting_det.php">
+  <form name="form1" method="post" action="crafting_det.php">
   <tr>
     <td>Refining:</td>
     <input type="hidden" name="recipe_category" value="1">

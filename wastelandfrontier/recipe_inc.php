@@ -1,4 +1,4 @@
-<?php require_once('mods/Connections/Rebirth1.php'); ?>
+<?php require_once('Connections/Rebirth1.php'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
 function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
@@ -85,7 +85,7 @@ $totalRows_Recordset2 = mysql_num_rows($Recordset2);
 			$recipe_total_items = $row_Recordset1['recipe_total_items'];
 
 ?>
-<form action="mods/recipe_result.php" method="post" name="recipeform">
+<form action="recipe_result.php" method="post" name="recipeform">
 <table width="300" border="1">
   <tr>
     <td colspan="4">Recipe Details and Material Choices: <?php echo $totalRows_Recordset1 ?></td>

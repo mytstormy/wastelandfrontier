@@ -163,7 +163,7 @@
 		} // end inner if
 		} // end the survey nodes if section
 	
-	$query4 = "SELECT * FROM tbl_mobs, tbl_mob_types WHERE mob_type = mob_type_id and mob_loc_x = '$det_loc_x' and mob_loc_y = '$det_loc_y'";
+	$query4 = "SELECT * FROM tbl_mobs, tbl_mob_types WHERE tbl_mobs.mob_type = tbl_mob_types.mob_type_id and mob_loc_x = '$det_loc_x' and mob_loc_y = '$det_loc_y'";
     $queryResult4 =  mysql_query($query4);
 	
 			echo '<tr><td COLSPAN=5>Found these Monsters: </td></tr>';
@@ -177,7 +177,7 @@
 			echo '<td>';
 			if ($vehiclestatus == 'Active' && $vehicle_loc_x == $det_loc_x && $vehicle_loc_y == $det_loc_y && $cellmobs['mob_hp'] > 0) {
 			?>
-            <form action="mods/battle.php" method="post" name="battleform">
+            <form action="battle.php" method="post" name="battleform">
             <input name="mob_id" type="hidden" value="<?php echo $cellmobs['mob_id']; ?>" />
             <input name="submit" type="submit" value="Fight" />
             </form>

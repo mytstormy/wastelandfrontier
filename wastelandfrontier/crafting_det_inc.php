@@ -73,7 +73,7 @@ $totalRows_Recordset1 = mysql_num_rows($Recordset1);
 
 ?>
 
-<form action="mods/recipe.php" method="post"><table width="200" border="1">
+<form action="recipe.php" method="post"><table width="200" border="1">
   <tr>
     <td colspan="3">Recipes for this Category</td>
   </tr>

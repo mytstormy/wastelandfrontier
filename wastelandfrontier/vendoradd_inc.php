@@ -1,4 +1,4 @@
-<?php require_once('mods/Connections/Rebirth1.php'); ?>
+<?php require_once('Connections/Rebirth1.php'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
 function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
@@ -279,7 +279,7 @@ Need a form for editing and adding Vendors. Other edit/add script/pages will be 
     <td><?php echo $row_Recordset1['vendor_type']; ?></td>
     <td><?php echo $row_Recordset1['vendor_loc_x']; ?>/<?php echo $row_Recordset1['vendor_loc_y']; ?></td>
     <td nowrap="nowrap">
-    <form action="mods/vendoradd.php" method="post" name="editpost"><input name="vendor_id" type="hidden" value="<?php echo $row_Recordset1['vendor_id']; ?>" /><input name="submit" type="submit" value="Edit" /></form>/<form action="mods/vendoradd.php" method="post" name="delpost"><input name="vendor_id_del" type="hidden" value="<?php echo $row_Recordset1['vendor_id']; ?>" /><input name="submit" type="submit" value="Delete" /></form>
+    <form action="vendoradd.php" method="post" name="editpost"><input name="vendor_id" type="hidden" value="<?php echo $row_Recordset1['vendor_id']; ?>" /><input name="submit" type="submit" value="Edit" /></form>/<form action="vendoradd.php" method="post" name="delpost"><input name="vendor_id_del" type="hidden" value="<?php echo $row_Recordset1['vendor_id']; ?>" /><input name="submit" type="submit" value="Delete" /></form>
     </td>
   </tr>
   <?php } while ($row_Recordset1 = mysql_fetch_assoc($Recordset1)); ?>

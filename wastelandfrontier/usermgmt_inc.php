@@ -99,7 +99,7 @@
 					<br /><br />
 					
 					
-					<form action="mods/usermgmt.php" method="post">
+					<form action="usermgmt.php" method="post">
 					<table border="1" cellpadding="1">
 						<tr COLSPAN=3>
 							<td>Other Info:</td>

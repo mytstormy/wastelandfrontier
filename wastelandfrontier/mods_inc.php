@@ -216,7 +216,7 @@ $totalRows_Recordset1 = mysql_num_rows($Recordset1);
 				
 					// inventory
 						// might as well try to include the inventory include? :)
-				//		include 'mods/mods/inventory_inc.php';
+				//		include 'inventory_inc.php';
 						// sell items from here?
 						// move b/t veh and base
 						// auction/trade?
