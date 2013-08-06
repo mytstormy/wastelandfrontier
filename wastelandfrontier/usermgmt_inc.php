@@ -62,63 +62,61 @@
 					
 ?>
 					
-					<table border="1" cellpadding="1">
-						<tr COLSPAN=2>
-							<td>User Info:</td>
+					<form action="" method="post" name="pwdupdate" target="_self"><table border="1" cellpadding="1">
+						<tr>
+							<td colspan="2">User Info:
+						    <field></td>
 						</tr>
 						<tr>
 							<td>Username:</td>
-							<td>$user_name here...</td>
+							<td><?php echo $user_name; ?> &nbsp;</td>
 						</tr>
 						<tr>
 							<td>Email:</td>
-							<td>$user_email here...</td>
+							<td><?php echo $user_email; ?> &nbsp;</td>
 						</tr>
+						<tr>
+						  <td>&nbsp;</td>
+						  <td><input type="hidden" name="hiddenField" id="hiddenField" /></td>
+					  </tr>
 						<tr>
 							<td>Pwd Change:</td>
 							<td>********</td>
 						</tr>
 						<tr>
 							<td>Current:</td>
-							<td><field></td>
+							<td><field>
+						    <input type="password" name="textfield3" id="textfield3" /></td>
 						</tr>
 						<tr>
 							<td>New:</td>
-							<td><field></td>
+							<td><field>
+						    <input type="password" name="textfield2" id="textfield2" /></td>
 						</tr>
 						<tr>
 							<td>NEw Confirm:</td>
-							<td><field></td>
+							<td><field>
+						    <input type="password" name="textfield" id="textfield" /></td>
 						</tr>
-						<tr COLSPAN=2>
-							<td align="right"><submit button></td>
+						<tr>
+							<td colspan="2" align="right"><input name="submit" type="submit" value="Change" />	</td>
 						</tr>
-					</table>
+</table></form>
 
 
 					<br /><br />
 					
-					
-					<form action="usermgmt.php" method="post">
-					<table border="1" cellpadding="1">
+<form action="" method="post" name="travelbattleupdate" target="_self">							
+<table border="1" cellpadding="1">
 						<tr COLSPAN=3>
-							<td>Other Info:</td>
+							<td colspan="3">Other Info:</td>
 						</tr>
 						<tr>
 							<td>&nbsp;</td>
 							<td>Currently:</td>
 							<td>Change To:</td>
 						</tr>
-						
-						<?php
-						
-						
-						
-						?>
-						
-						
-						
-						<tr>
+<tr>
 							<td>Travel Type</td>
 							<td><?php echo $user_travel_type; ?></td>
 							<td>Timed -<input type="radio" name="travel_type" value="0" /><br /> 
@@ -131,16 +129,49 @@
 							Auto -<input type="radio" name="battle_type" value="1" /></td>
 						</tr>
 						<tr COLSPAN=3>
+						  <td>&nbsp;</td>
+						  <td>&nbsp;</td>
+						  <td><input name="submit2" type="submit" value="Change" /></td>
+					  </tr>					
+                      </table>
+
+</form>				
+
+
+					<form action="usermgmt.php" method="post">
+					<table border="1" cellpadding="1">
+                        <tr COLSPAN=3>
+						  <td>&nbsp;</td>
+						  <td>&nbsp;</td>
+						  <td>&nbsp;</td>
+					  </tr>
+						<tr COLSPAN=3>
 							<td>account type.</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
 						</tr>
 						<tr COLSPAN=3>
 							<td>donations or transaction history.</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
 						</tr>
 						<tr COLSPAN=3>
 							<td align="right">admin privileges/links</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
 						</tr>
+						<tr COLSPAN=3>
+						  <td align="right">&nbsp;</td>
+						  <td>&nbsp;</td>
+						  <td>&nbsp;</td>
+					  </tr>
+						<tr COLSPAN=3>
+						  <td align="right">&nbsp;</td>
+						  <td>&nbsp;</td>
+						  <td><input name="submit3" type="submit" value="Change" /></td>
+					  </tr>
 					</table>
-					</form>
+</form>
 					
 					<br />
 					

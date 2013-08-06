@@ -42,7 +42,7 @@
 <file name="battle.php" server="wastelandfrontier.com//public_html/wasteland2/" local="130191988773045772" remote="130197250800000000" />
 <file name="admin_inc.php" server="wastelandfrontier.com//public_html/wasteland2/" local="129842136000000000" remote="130197250800000000" />
 <file name="base.php" server="wastelandfrontier.com//public_html/wasteland2/" local="130191988829647959" remote="130197250800000000" />
-<file name="usermgmt.php" server="wastelandfrontier.com//public_html/wasteland2/" local="130191988817376401" remote="130192064400000000" />
+<file name="usermgmt.php" server="wastelandfrontier.com//public_html/wasteland2/" local="130191988817376401" remote="130202519400000000" />
 <file name="newusers.php" server="wastelandfrontier.com//public_html/wasteland2/" local="130191988805374877" remote="130192064400000000" />
 <file name="register.php" server="wastelandfrontier.com//public_html/wasteland2/" local="129834360000000000" remote="129834360000000000" />
 <file name="register1.php" server="wastelandfrontier.com//public_html/wasteland2/" local="129841272000000000" remote="129841272000000000" />
@@ -73,7 +73,7 @@
 <file name="newusers_inc.php" server="wastelandfrontier.com//public_html/wasteland2/" local="129842136000000000" remote="130192064400000000" />
 <file name="recipe_inc.php" server="wastelandfrontier.com//public_html/wasteland2/" local="130196999805037332" remote="130197214200000000" />
 <file name="recipe_result_inc.php" server="wastelandfrontier.com//public_html/wasteland2/" local="130194966714984773" remote="130197214800000000" />
-<file name="usermgmt_inc.php" server="wastelandfrontier.com//public_html/wasteland2/" local="130197012669761119" remote="130197086400000000" />
+<file name="usermgmt_inc.php" server="wastelandfrontier.com//public_html/wasteland2/" local="130202305265861009" remote="130202519400000000" />
 <file name="vendor_det_inc.php" server="wastelandfrontier.com//public_html/wasteland2/" local="130194688256911063" remote="130194760200000000" />
 <file name="vendor_inc.php" server="wastelandfrontier.com//public_html/wasteland2/" local="129852116100000000" remote="130134790200000000" />
 <file name="worklog_inc.php" server="wastelandfrontier.com//public_html/wasteland2/" local="130191984291869351" remote="130192064400000000" />
