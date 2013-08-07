@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_Recordset1" value="name:map_loc_id;datatype:int,name:map_loc_x;datatype:int,name:map_loc_y;datatype:int,name:map_loc_z;datatype:int,name:map_loc_notes;datatype:string,name:map_loc_special;datatype:string" />
+</info>

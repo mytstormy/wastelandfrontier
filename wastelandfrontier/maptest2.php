@@ -168,8 +168,31 @@ To reset to ship loc : <a href="maptest2_edit.php?reset=1">Reset to Ship Loc</a>
 
 <p><a href="admin.php">Admin Page</a> <br />  
 <a href="mapedit.php">Map Edit Page</a> </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+codebase="http://download.macromedia.com/pub/
+shockwave/cabs/flash/swflash.cab#version=7,0,0,0"
+width="550" height="300" id="zoom_map" align="top">
+<param name="movie" value="us_albers.swf?data_file=senate.xml" />
+<param name="quality" value="high" />
+<param name="bgcolor" value="#FFFFFF" />
+<embed src="us_albers.swf?data_file=senate.xml" quality="high" bgcolor="#FFFFFF"
+width="550" height="300" name="Clickable World Map" align="top" 
+type="application/x-shockwave-flash" 
+pluginspage="http://www.macromedia.com/go/getflashplayer">
+</embed>
+</object>
+
+
+<p>&nbsp;</p>
+
 </body>
 </html>
 <?php
 mysql_free_result($Recordset1);
 ?>
+
+
+

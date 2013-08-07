@@ -92,9 +92,18 @@
 <file name="travel_inc.php" server="wastelandfrontier.com//public_html/wasteland2/" local="130192812020136057" remote="130192899000000000" />
 <file name="vendoradd_inc.php" server="wastelandfrontier.com//public_html/wasteland2/" local="130197012828466272" remote="130197086400000000" />
 <file name="vendors_inc.php" server="wastelandfrontier.com//public_html/wasteland2/" local="130193682234103942" remote="130193758800000000" />
-<file name="maptest2.php" server="wastelandfrontier.com//public_html/wasteland2/" local="130192807447676919" remote="130192899000000000" />
+<file name="maptest2.php" server="wastelandfrontier.com//public_html/wasteland2/" local="130202921604107328" remote="130202993400000000" />
 <file name="maptest2_edit.php" server="wastelandfrontier.com//public_html/wasteland2/" local="129509496000000000" remote="130192899000000000" />
 <file name="crafting_det.php" server="wastelandfrontier.com//public_html/wasteland2/" local="130191988785192314" remote="130197250800000000" />
 <file name="recipe_result.php" server="wastelandfrontier.com//public_html/wasteland2/" local="130191988813435901" remote="130197214800000000" />
 <file name=".htaccess" server="wastelandfrontier.com//public_html/wasteland2/" local="129676640400000000" remote="130197250800000000" />
+<file name="recipe_add_inc.php" server="wastelandfrontier.com//public_html/wasteland2/" local="130202891445225186" remote="130202982600000000" />
+<file name="recipe_add.php" server="wastelandfrontier.com//public_html/wasteland2/" local="130202822481723647" remote="130202895600000000" />
+<file name="imcs.xml" server="wastelandfrontier.com//public_html/wasteland2/" local="129261232320000000" remote="130202982600000000" />
+<file name="index.html" server="wastelandfrontier.com//public_html/wasteland2/" local="129291343900000000" remote="130202982600000000" />
+<file name="modernization.xml" server="wastelandfrontier.com//public_html/wasteland2/" local="129261232320000000" remote="130202982600000000" />
+<file name="pop.xml" server="wastelandfrontier.com//public_html/wasteland2/" local="129261232320000000" remote="130202982600000000" />
+<file name="senate.xml" server="wastelandfrontier.com//public_html/wasteland2/" local="129261232320000000" remote="130202982600000000" />
+<file name="swfobject.js" server="wastelandfrontier.com//public_html/wasteland2/" local="129261232320000000" remote="130202982600000000" />
+<file name="us_albers.swf" server="wastelandfrontier.com//public_html/wasteland2/" local="129261232320000000" remote="130202982600000000" />
 </dwsync>
